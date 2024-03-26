@@ -38,14 +38,17 @@ public class LoginTests {
         driver.findElement(By.xpath("//*[@id=\"myUL\"]/li[1]/div/div[3]/button"));
 
 
+        
     }
 
 
     @Test
     void baykarLoginTesti() throws InterruptedException{
 
+        var driver = DriverGet();
+    
         driver.get("https://kariyer.baykartech.com/tr/");
-
+        
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20L));
 
 
